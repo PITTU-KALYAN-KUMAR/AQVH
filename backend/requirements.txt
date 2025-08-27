@@ -1,0 +1,22 @@
+/backend
+│
+├── /data
+│   ├── __init__.py
+│   ├── data_loader.py
+│   ├── data_preprocessing.py
+│   └── data_visualization.py
+│
+├── /models
+│   ├── __init__.py
+│   ├── model_training.py
+│   ├── model_evaluation.py
+│   └── model_prediction.py
+│
+├── /utils
+│   ├── __init__.py
+│   ├── config.py
+│   ├── logger.py
+│   └── helpers.py
+│
+├── main.py
+└── requirements.txt
