@@ -28,6 +28,7 @@ const navigationItems = [
   { title: "VQC Analysis", url: "/vqc-analysis", icon: Brain },
   { title: "Market Data", url: "/market-data", icon: BarChart3 },
   { title: "SVM vs VQC", url: "/comparison", icon: GitCompare },
+  { title: "Forecast", url: "/forecast", icon: BarChart3 },
 ];
 
 const quantumTools = [

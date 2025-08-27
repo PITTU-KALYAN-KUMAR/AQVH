@@ -1,3 +1,4 @@
+import Forecast from "./pages/Forecast";
 import { Toaster } from "./components/ui/toaster";
 import { Toaster as Sonner } from "./components/ui/sonner";
 import { TooltipProvider } from "./components/ui/tooltip";
@@ -14,6 +15,7 @@ import MarketDataPage from "./pages/MarketDataPage";
 import ComparisonPage from "./pages/Comparison";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import LiveTradingPage from "./pages/LiveTradingPage";
 
 const queryClient = new QueryClient();
 
@@ -64,10 +66,13 @@ const App = () => (
             
             {/* These routes now correctly render inside the provider */}
             <Route path="/dashboard" element={<DashboardLayout><DashboardPage /></DashboardLayout>} />
+            <Route path="/dashboard" element={<DashboardLayout><DashboardPage /></DashboardLayout>} />
             <Route path="/predictions" element={<DashboardLayout><PredictionsPage /></DashboardLayout>} />
             <Route path="/vqc-analysis" element={<DashboardLayout><VQCAnalysisPage /></DashboardLayout>} />
             <Route path="/market-data" element={<DashboardLayout><MarketDataPage /></DashboardLayout>} />
             <Route path="/comparison" element={<DashboardLayout><ComparisonPage /></DashboardLayout>} />
+            <Route path="/live-trading" element={<DashboardLayout><LiveTradingPage /></DashboardLayout>} />
+            <Route path="/forecast" element={<DashboardLayout><Forecast /></DashboardLayout>} />
             
             <Route path="*" element={<NotFound />} />
           </Routes>
